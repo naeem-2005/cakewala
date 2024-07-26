@@ -1,0 +1,135 @@
+.customer-reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .customer-reviews h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .customer-reviews button {
+    display: block;
+    margin: 0 auto; 
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    background: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
+  }
+  
+  .customer-reviews button:hover {
+    background: #ff3f2c;
+    transform: scale(1.05);
+  }
+  
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .review {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .review .rating {
+    font-size: 1.5rem;
+    color: #ffb400;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    margin-right: 2px;
+  }
+  
+  .review-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .author {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .date, .location, .occasion {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .content-section h3 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+  }
+  
+  .content-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
+  }
+  
+  .more-btn:hover {
+    background: #ff3f2c;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 600px) {
+    .review {
+      max-width: 45%;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .review {
+      max-width: 30%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .review {
+      max-width: 23%;
+    }
+  }
+  

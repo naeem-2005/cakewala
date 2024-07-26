@@ -1,0 +1,116 @@
+.productlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.productlist-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productlist-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productlist-item-details {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  text-align: center;
+}
+
+.productlist-item-details h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.productlist-item-details p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #252323;
+}
+
+.productlist-item-button {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff3b3b 100%);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.productlist-item-button:hover {
+  background: linear-gradient(135deg, #ff3b3b 0%, #ff6b6b 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.PriceButton button {
+  background: linear-gradient(135deg, #4a90e2 0%, #007aff 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.PriceButton button:hover {
+  background: linear-gradient(135deg, #007aff 0%, #4a90e2 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .productlist-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .productlist-item-details h3 {
+    font-size: 1.2em;
+  }
+
+  .productlist-item-details p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .productlist-container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .productlist-item-details h3 {
+    font-size: 1em;
+  }
+
+  .productlist-item-details p {
+    font-size: 0.8em;
+  }
+
+  .productlist-item-button {
+    font-size: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+  }
+}

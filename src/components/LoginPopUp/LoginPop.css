@@ -1,0 +1,104 @@
+.login-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.login-popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  max-height: 90vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow-y: auto;
+}
+
+
+.login-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.form-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.switch-button {
+  padding: 10px 20px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 4px; 
+}
+
+.switch-button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .login-popup-content {
+    width: 90%;
+    padding: 15px;
+    max-height: 87vh; 
+  }
+
+  .login-popup-close {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .switch-button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-popup-content {
+    width: 95%;
+    padding: 10px;
+    max-height: 70vh;
+  }
+
+  .login-popup-close {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    top: 5px;
+    right: 5px;
+  }
+
+  .switch-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
